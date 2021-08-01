@@ -13,7 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload="myfunction()">
+    	<div id="loading">
+    	 <div id="loader" ></div>
+    	</div>
     	<section>
     		<nav>
     			<a href="#"><h1>FoodVilla</h1></a>
@@ -130,6 +133,16 @@
 		</div>
 
 	</footer>
-	<h6>copywrite@2021 Samurai Developer</h6>
+	<h6>copywrite@2021 Noob Developer</h6>
+	<script>
+		let preloader=document.getElementById("loader");
+		let preloader1=document.getElementById("loading");
+		
+		function myfunction()
+		{
+			preloader.style.display='none';
+			preloader1.style.display='none';
+		}
+	</script>
     </body>
 </html>
